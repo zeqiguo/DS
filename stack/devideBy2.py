@@ -1,4 +1,4 @@
-from Stack.stack import Stack
+from stack.stack import Stack
 
 
 def dividBy2(decNumber: int):
