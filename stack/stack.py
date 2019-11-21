@@ -14,7 +14,7 @@ class Stack:
     def pop_(self):
         return self.item.pop()
 
-    def peak(self):
+    def peek(self):
         return self.item[-1]
 
     def size(self):
@@ -32,5 +32,6 @@ class Stack:
 # # stack.print_stack()
 # print(stack.isEmpty())
 
+s = Stack()
 
 

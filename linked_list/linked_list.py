@@ -143,14 +143,14 @@ class LinkedList:
             temp = temp.next
 
 
-l1 = Linked_List()
-l1.insert_head(1)
-l1.insert_tail(2)
+# l1 = Linked_List()
+# l1.insert_head(1)
+# l1.insert_tail(2)
 # l1.insert_at_index(data=0, index=2)
-l1.insert_tail(3)
+# l1.insert_tail(3)
 # l1.print_list()
 # l1.reverse()
-print(l1.find_value_at_index(index=2))
+# print(l1.find_value_at_index(index=2))
 # l1.print_list()
 # print('\n\n\n')
 # l1.modify_at_index(index=2, data=0)
