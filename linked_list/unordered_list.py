@@ -30,10 +30,33 @@ class UnorderList:
         self.head = new_node
 
     def size_(self):
-        pass
+        curr = self.head
+        num = 0
+        while curr:
+            num += 1
+            curr = curr.get_next()
+        return num
+
+    def search(self, item):
+        curr = self.head
+        found = False
+        while curr and not found:
+            if curr.get_data() == item:
+                found = True
+            else:
+                curr = curr.get_next()
+        return found
     
     def remove_(self, item):
         pass
+
+
+
+ul = UnorderList()
+ul.add_(1)
+ul.add_(2)
+print(ul.search(1))
+# print(ul.size_())
 
 
 
