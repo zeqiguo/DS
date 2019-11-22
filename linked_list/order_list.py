@@ -79,6 +79,35 @@ class OrderList:
         else:
             prev.set_next((curr.get_next()))
 
+    def index_(self, item):
+        curr = self.head
+        index = 0
+        while curr:
+            if curr.get_data() == item:
+                return index
+            curr = curr.get_next()
+            index += 1
+
+    def pop_(self):
+        curr = self.head
+        prev = None
+        while curr.get_next():
+            prev = curr
+            curr = curr.get_next()
+        prev.set_next(None)
+        return curr.get_data()
+
+    def pop_index(self, index):
+        curr = self.head
+        prev = None
+        pos = 0
+        while curr and pos != index:
+            prev = curr
+            curr = curr.get_next()
+            pos += 1
+        prev.set_next(curr.get_next())
+        return curr.get_data()
+
     def print_(self):
         curr = self.head
         while curr:
